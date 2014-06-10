@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <CheckBox
+        android:id="@+id/track_check_view"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+   	 />
+    
+    <ImageButton
+        android:id="@+id/track_play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:contentDescription="@string/play_button"
+        android:background="#FFFFFF"
+        android:src="@drawable/play"
+        android:layout_toRightOf="@+id/track_check_view"
+   	 />
+    
+    <ImageView 
+        android:id="@+id/track_cover_view"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:contentDescription="@string/cover_of_track"
+    	android:layout_toRightOf="@+id/track_play_button"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+     />
+    
+    <TextView
+        android:id="@+id/track_title_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/track_cover_view"
+        android:layout_alignParentTop="true"
+        android:paddingTop="6dp"
+        android:paddingLeft="4dp"
+        android:textStyle="bold"
+     />
+    
+    <TextView
+        android:id="@+id/track_description_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/track_cover_view"
+        android:layout_below="@+id/track_title_view"
+        android:paddingTop="4dp"
+        android:paddingLeft="4dp"
+        android:textColor="@android:color/tertiary_text_dark"
+     />
+
+</RelativeLayout> 	

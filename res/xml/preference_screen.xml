@@ -1,0 +1,27 @@
+<PreferenceScreen
+    	android:key="soundcloudExtPrefs"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Host and Target Profile">
+            
+        <EditTextPreference
+                android:key="pref_service_host"
+                android:title="Service-Host"
+                android:summary="Define the host of the REST-Service"
+                android:dialogTitle="Limit"
+                android:defaultValue="http://10.0.0.4:8002"
+         />
+
+        <EditTextPreference
+                android:key="pref_target_profile"
+                android:title="Profilename"
+                android:summary="Name of profile where to download tracks from"
+                android:dialogTitle="Profilename"
+                android:defaultValue="wankeltruug"
+         />
+        
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
